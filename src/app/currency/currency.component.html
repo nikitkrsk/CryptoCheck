@@ -1,0 +1,76 @@
+<div class="header">Current Crypto Status</div>
+<div class="container">
+
+        <div [ngStyle]="{ color: checkColor(bitcoinStatus) }" class="currency">
+          <i class="fab fa-bitcoin"> </i>(bitcoin)
+          <span>{{ bitcoin }}</span>
+          <div *ngIf="bitcoinStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(ethereumStatus) }" class="currency">
+          <i class="fab fa-ethereum"></i>(ethereum)
+          <span>{{ ethereum }}</span>
+          <div *ngIf="ethereumStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(moneroStatus) }" class="currency">
+          <i class="fab fa-monero"> </i>(monero)
+          <span>{{ monero }}</span>
+          <div *ngIf="moneroStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(litecoinStatus) }" class="currency">
+          <i class="fab fa-bitcoin"></i>(litecoin)
+          <span>{{ litecoin }}</span>
+          <div *ngIf="litecoinStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(rippleStatus) }" class="currency">
+          <i class="fab fa-bitcoin"></i>(ripple)
+          <span>{{ ripple }}</span>
+          <div *ngIf="rippleStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(stellarStatus) }" class="currency">
+          <i class="fab fa-bitcoin"></i>(stellar)
+          <span>{{ stellar }}</span>
+          <div *ngIf="stellarStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(tronStatus) }" class="currency">
+          <i class="fab fa-bitcoin"></i>(tron)
+          <span>{{ tron }}</span>
+          <div *ngIf="tronStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      
+        <div [ngStyle]="{ color: checkColor(cardanoStatus) }" class="currency">
+          <i class="fab fa-bitcoin"></i>(cardano)
+          <span>{{ cardano }}</span>
+          <div *ngIf="cardanoStatus > 0 ;else arrowDown "><i class="fas fa-arrow-down"></i></div>
+          <ng-template #arrowDown>
+          <i class="fas fa-arrow-up"></i>
+          </ng-template>
+        </div>
+      </div>
+      
