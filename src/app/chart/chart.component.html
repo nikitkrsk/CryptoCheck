@@ -1,0 +1,84 @@
+<div class="header">Live Crypto Charts
+</div>
+<div class="container">
+  <!-- ethereum -->
+  <div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          width="400"
+          height="400"
+          [datasets]="lineChartDataEth"
+          [labels]="lineChartLabelsEth"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+  <!--Bitcoin-->
+  <div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          width="400"
+          height="400"
+          [datasets]="lineChartDataBit"
+          [labels]="lineChartLabelsBit"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+  <!--Monero-->
+  <div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          width="400"
+          height="400"
+          [datasets]="lineChartDataMon"
+          [labels]="lineChartLabelsMon"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+  <!--Litecoin-->
+  <div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas
+          baseChart
+          width="400"
+          height="400"
+          [datasets]="lineChartDataLit"
+          [labels]="lineChartLabelsLit"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+</div>

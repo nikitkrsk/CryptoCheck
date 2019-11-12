@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, auto);
+}
+.flex {
+  display: flex;
+}
+.header{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    padding: 2% 0 5% 0
+}
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media (max-width: 550px) {
+  .flex-item {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
